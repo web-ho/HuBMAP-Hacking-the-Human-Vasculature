@@ -1,7 +1,7 @@
 # About Repo:
 
 In this repo I have shared my approach to train a model that detects and segments instances of microvascular structures on a given human kidney tissue slides.
-You can read more about the problem and data 
+You can read more about the problem and data <a href="https://www.kaggle.com/competitions/hubmap-hacking-the-human-vasculature/overview">here</a>.
 
 # Data Description:
 
