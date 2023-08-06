@@ -1,11 +1,11 @@
 # About Repo:
 
 In this repo I have shared my approach to train a model that detects and segments instances of microvascular structures on a given human kidney tissue slides.
-You can read more about the problem and data <a href="https://www.kaggle.com/competitions/hubmap-hacking-the-human-vasculature/overview">here</a>.
+You can read more about the problem and data here <a href="https://www.kaggle.com/competitions/hubmap-hacking-the-human-vasculature/overview">LINK</a>.
 
 # Data Description:
 
-The solution that got me my first bronze is simple.
+The solution that got me my first bronze on kaggle.
 
 As described on the competition site-
 The data comprises tiles extracted from five Whole Slide Images (WSI) split into two datasets. Tiles from Dataset 1 have annotations that have been expert reviewed. Dataset 2 comprises the remaining tiles from these same WSIs and contain sparse annotations that have not been expert reviewed.
@@ -16,10 +16,11 @@ The data comprises tiles extracted from five Whole Slide Images (WSI) split into
 
 They have also provided, as Dataset 3, tiles extracted from an additional nine WSIs. These tiles have not been annotated. Thus, we could use semi- or self-supervised learning techniques on this data.
 
+Also, important to remember that we only have to predict blood_vessels for the submission to work.
+
 # Method:
 
 My approach was to train a model using both dataset 1 and 2. I used Yolov8 to set up a simple baseline and it performed amazingly.
-I tried to tweak every hyperparameters but nothing worked, finally this is what performed well-
 
 - simple train-test split with validation data from dataset 2.
 - img_size = 512
@@ -38,7 +39,7 @@ For Inference-
 
 # Another approach:
 
-I tried to implement the top approachs of sartorious cell segmentation task to this task, due to timeline and resources issues couldn't make it work-
+I tried to implement the top solutions of sartorious cell segmentation task to this task, due to timeline and resources issues couldn't make it work-
 
 Two stage approach-
 First stage:
